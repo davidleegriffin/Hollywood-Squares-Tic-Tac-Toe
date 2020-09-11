@@ -1,0 +1,54 @@
+/* Write your CSS here. */
+
+body {
+    zoom: 0.75;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Cumulus_Clouds_over_Yellow_Prairie2.jpg/1280px-Cumulus_Clouds_over_Yellow_Prairie2.jpg");
+  }
+
+  #banner {
+      background-color: rgb(96, 189, 226);
+      display: flex;
+      justify-content: space-around;
+  }
+
+  #startGame {
+      width: 150px;
+      height: 50px;
+      align-self: center;
+  }
+  
+  .wgs {
+    display: inline-block;
+    height: 241px;
+    position: relative;
+    width: 320px;
+    overflow: hidden;
+  }
+  
+  .wgs__mole-head {
+    height: 178px;
+    position: absolute;
+    width: 188px;
+    left: 55px;
+    transition-property: margin-top;
+    transition-duration: 0.25s;
+  }
+  
+  .wgs__dirt-pile {
+    height: 110px;
+    position: absolute;
+    width: 320px;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .wgs__mole-head--hidden {
+    margin-top: 241px;
+  }
+  
+  .pf {
+    margin-top: 540px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
