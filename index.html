@@ -1,36 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>App Academy Hollywood Squares Tic-Tac-Toe Project</title>
-  <link rel="stylesheet" href="./site.css">
-</head>
-
-<body>
-  <div class="actions">
-    <button id="new-game">New Game</button>
-    <span id="banner" class="banner"></span>
-    <button id="give-up">Give Up</button>
-  </div>
-  <div id="game">
-    <h1 class="announcement" id="game-status"></h1>
-
-    <div id="tic-tac-toe-board">
-      <div id="square-0" class="square row-1 col-1"></div>
-      <div id="square-1" class="square row-1 col-2"></div>
-      <div id="square-2" class="square row-1 col-3"></div>
-      <div id="square-3" class="square row-2 col-1"></div>
-      <div id="square-4" class="square row-2 col-2"></div>
-      <div id="square-5" class="square row-2 col-3"></div>
-      <div id="square-6" class="square row-3 col-1"></div>
-      <div id="square-7" class="square row-3 col-2"></div>
-      <div id="square-8" class="square row-3 col-3"></div>
+<html>
+  <head>
+    <title>Attack of the MoleMen!</title>
+    <link rel="stylesheet" type="text/css" href="mole.css" />
+    <script type="text/javascript" src="mole.js"></script>
+  </head>
+  <body>
+    <div id="banner">
+      <h1 id="molesRemaining"></h1>
+      <button id="startGame" type="button" autofocus>Start Game</button>
+      <h1 id="score"></h1>
     </div>
-
-  </div>
-  <script src="./tic-tac-toe.js"></script>
-</body>
-
+    <div class="pf">
+      <div class="wgs">
+        <img
+          class="wgs__mole-head wgs__mole-head--hidden"
+          src="mole-head.png"
+          alt=""
+        />
+        <img class="wgs__dirt-pile" src="mole-hill.png" alt="" />
+      </div>
+      <div class="wgs">
+        <img
+          class="wgs__mole-head wgs__mole-head--hidden"
+          src="mole-head.png"
+          alt=""
+        />
+        <img class="wgs__dirt-pile" src="mole-hill.png" alt="" />
+      </div>
+      <div class="wgs">
+        <img
+          class="wgs__mole-head wgs__mole-head--hidden"
+          src="mole-head.png"
+          alt=""
+        />
+        <img class="wgs__dirt-pile" src="mole-hill.png" alt="" />
+      </div>
+      <div class="wgs">
+        <img
+          class="wgs__mole-head wgs__mole-head--hidden"
+          src="mole-head.png"
+          alt=""
+        />
+        <img class="wgs__dirt-pile" src="mole-hill.png" alt="" />
+      </div>
+      <div class="wgs">
+        <img
+          class="wgs__mole-head wgs__mole-head--hidden"
+          src="mole-head.png"
+          alt=""
+        />
+        <img class="wgs__dirt-pile" src="mole-hill.png" alt="" />
+      </div>
+      <div class="wgs">
+        <img
+          class="wgs__mole-head wgs__mole-head--hidden"
+          src="mole-head.png"
+          alt=""
+        />
+        <img class="wgs__dirt-pile" src="mole-hill.png" alt="" />
+      </div>
+      <div class="wgs">
+        <img
+          class="wgs__mole-head wgs__mole-head--hidden"
+          src="mole-head.png"
+          alt=""
+        />
+        <img class="wgs__dirt-pile" src="mole-hill.png" alt="" />
+      </div>
+      <div class="wgs">
+        <img
+          class="wgs__mole-head wgs__mole-head--hidden"
+          src="mole-head.png"
+          alt=""
+        />
+        <img class="wgs__dirt-pile" src="mole-hill.png" alt="" />
+      </div>
+    </div>
+  </body>
 </html>
