@@ -14,6 +14,7 @@
     <span id="banner" class="banner"><h1><marquee>LETS PLAY HOLLYWOOD SQUARES!!!</marquee></h1></span>
     <button id="give-up">Give Up</button>
   </div>
+  <a href="./mole.html">mole</a>
   <div id="game">
     <h1 class="announcement" id="game-status"></h1>
     
