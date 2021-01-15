@@ -14,7 +14,7 @@
     <a href="./mole.html">mole</a>
   </div>
   <div class="links">
-    <a href="./mole.html">mole</a>
+    <a href="./hollywood.html">HOLLYWOOD SKILLS</a>
   </div>
   
 
