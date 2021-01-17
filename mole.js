@@ -10,7 +10,7 @@ window.addEventListener('DOMContentLoaded', () => {
     startButton.addEventListener('click', (e) => {
         popUpRandomMole();
     })
-    
+
     moleHeads.forEach(mole => {
         mole.addEventListener('click', (e) => {
             e.target.classList.add("wgs__mole-head--hidden")
@@ -19,8 +19,8 @@ window.addEventListener('DOMContentLoaded', () => {
             userScore.innerHTML = `Score: ${score}`;
         })
     });
-    
-    
+
+
     function popUpRandomMole() {
         let remaining = 9 - turnCount;
         turnCount += 1;
@@ -30,12 +30,12 @@ window.addEventListener('DOMContentLoaded', () => {
         }
         molesRemaining.innerHTML = `Moles Remaining: ${remaining}`;
         let moleHeads = document.querySelectorAll(".wgs__mole-head");
-        let random = Math.floor(Math.random() * 8);
+        let random = Math.floor(Math.random() * 4);
         let mole = moleHeads[random];
         mole.classList.remove("wgs__mole-head--hidden");
         setTimeout(() => {
           hideMole(mole);
-        }, 750);
+        }, 1000);
       }
 
     function hideMole(mole) {
@@ -44,5 +44,5 @@ window.addEventListener('DOMContentLoaded', () => {
             popUpRandomMole();
          }, 1000);
     }
-  
+
   });
