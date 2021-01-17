@@ -7,7 +7,7 @@
     margin: auto;
 }
 
-button {
+.main__navbar--buttons {
     height:50px;
     width: 100px;
     outline: none;
@@ -18,13 +18,40 @@ button {
     transition: width 1s, height 1s, transform 1s;
 }
 
-button:hover {
+.main__navbar--buttons:hover {
   background-color: black;
   color: white;
   box-shadow: 0px 0px 0px 0px white;
   width: 100px;
   height: 100px;
   transform: rotate(360deg);
+}
+
+.main__spotlight--button {
+  position: relative;
+  height:50px;
+  width: 250px;
+  margin-left: 80px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-weight: 900;
+  font-size: xx-large;
+}
+
+.main__spotlight--button:hover {
+  background-color: white;
+}
+
+.spotlight {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: radial-gradient(
+      circle,
+      transparent 160px,
+      rgba(0, 0, 0, 0.85) 200px
+  );
 }
 
 .main__container--page {
