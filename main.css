@@ -3,6 +3,11 @@
   src: url('gypsy-curse.regular.ttf')
 }
 
+@font-face{
+  font-family: "Work Sans";
+  src: url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@900");
+}
+
 .main__container--navbar {
     display: flex;
     justify-content: space-evenly;
@@ -61,12 +66,13 @@
   margin-top: -50px;
 }
 
-.main__spotlight--button {
+.main__spotlight--button1 {
   position: relative;
   height:50px;
   width: 250px;
   margin-left: 80px;
-  outline: 1px solid black;
+  margin-top: 10px;
+  outline: 1px solid rgba(0,0,0,0.2);
   outline-offset: 0px;
   border: none;
   background-color: transparent;
@@ -75,7 +81,7 @@
   animation: button-outline 1.6s infinite;
 }
 
-.main__spotlight--button:hover {
+.main__spotlight--button1:hover {
   font-family: Gypsy Curse;
   padding-top: 0px;
   font-family: Gypsy Curse;
@@ -105,13 +111,24 @@
   width: 350px;
   margin-top: 20px;
   margin-left: 37px;
-  outline: 1px solid black;
+  outline: 1px solid rgba(0,0,0,0.2);
   border: none;
   background-color: transparent;
+  font-family: Work Sans;
   font-weight: 900;
-  font-size: xx-large;
+  font-size: 30px;
   animation: button-outline 1.6s infinite;
-  animation-delay: .4s;
+  animation-delay: .2s;
+}
+
+.main__spotlight--button2:hover {
+  color: rgba(0,255.0,1);
+  outline: none;
+  animation: growText 2s;
+}
+
+.main__container--project2:hover {
+
 }
 
 .main__spotlight--button3 {
@@ -120,13 +137,13 @@
   width: 350px;
   margin-top: 20px;
   margin-left: 37px;
-  outline: 1px solid black;
+  outline: 1px solid rgba(0,0,0,0.2);
   border: none;
   background-color: transparent;
   font-weight: 900;
   font-size: xx-large;
   animation: button-outline 1.6s infinite;
-  animation-delay: .8s;
+  animation-delay: .4s;
 }
 
 .main__spotlight--button4 {
@@ -135,13 +152,13 @@
   width: 350px;
   margin-top: 20px;
   margin-left: 37px;
-  outline: 1px solid black;
+  outline: 1px solid rgba(0,0,0,0.2);
   border: none;
   background-color: transparent;
   font-weight: 900;
   font-size: xx-large;
   animation: button-outline 1.6s infinite;
-  animation-delay: 1.2s;
+  animation-delay: .6s;
 }
 
 .main__h1--spotlight {
@@ -150,19 +167,19 @@
 
 .spot1 {
     position: absolute;
-    left: 40%;
+    left: 38%;
      -webkit-animation: move 7s infinite;
     }
 
 .spot2 {
     position: absolute;
-    left: 60%;
+    left: 62%;
      -webkit-animation: move2 7s infinite;
     }
 
 .spotlight {
   position: absolute;
-  width: 53px;
+  width: 63px;
   height: 0px;
   border-top: 500px solid rgba(255,255,255,0.25);
   border-left: 40px solid transparent;
@@ -240,3 +257,43 @@
     20%  {background-color: red;}
     100% {background-color: red;}
     }
+
+@keyframes growText {
+  0% {
+    transform: scale(1);
+    text-shadow: 1px 1px rgba(0,255,0,0.5);
+   }
+  /* 10% {
+    transform: scale(1.25);
+   }
+  20% {
+    transform: scale(1.5); }
+  30% {
+    transform: scale(1.66);
+   }
+  40% {
+    transform: scale(1.83);
+   } */
+  50% {
+    transform: scale(2);
+    text-shadow: 5px 5px 4px rgba(0,255,0,0.5);
+
+   }
+  /* 60% {
+    transform: scale(1.83);
+   }
+  70% {
+    transform: scale(1.66);
+   }
+  80% {
+    transform: scale(1.5);
+    }
+  90% {
+    transform: scale(1.25);
+   } */
+  100% {
+    transform: scale(1);
+    text-shadow: 1px 1px rgba(0,255,0,0.5);
+
+   }
+}
