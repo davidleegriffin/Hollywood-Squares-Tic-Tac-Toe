@@ -32,41 +32,6 @@
   transform: rotate(360deg);
 }
 
-.main__spotlight--button {
-  position: relative;
-  height:50px;
-  width: 250px;
-  margin-left: 80px;
-  outline: none;
-  border: none;
-  background-color: transparent;
-  font-weight: 900;
-  font-size: xx-large;
-}
-
-.main__spotlight--button:hover {
-  font-family: Gypsy Curse;
-  padding-top: 0px;
-  font-family: Gypsy Curse;
-  font-size: 37px;
-  border: 1px solid black;
-  border-radius: 20px;
-  color: silver;
-  animation-name: color-background;
-  animation-duration: 8s;
-  transition: text-shadow 3s;
-
-  text-shadow:
-    13px 30px 1px black,
-    14px 34px 1px #FC0000,
-    15px 36px 1px #FD0000,
-    16px 38px 1px #FE0000,
-    16px 40px 2px #FF0000,
-    16px 42px 2px #FF0000,
-    16px 44px 2px #FF0000,
-    17px 46px 3px #FF0000;
-}
-
 .spotlight {
   position: absolute;
   height: 100%;
@@ -89,9 +54,94 @@
   position: absolute;
   left: 38%;
   top: 20%;
+  display: flex;
+  flex-direction: column;
   z-index: 999;
   color: rgba(255,255,255,0.15);
-  margin-top: 50px;
+  margin-top: -50px;
+}
+
+.main__spotlight--button {
+  position: relative;
+  height:50px;
+  width: 250px;
+  margin-left: 80px;
+  outline: 1px solid black;
+  outline-offset: 0px;
+  border: none;
+  background-color: transparent;
+  font-weight: 900;
+  font-size: xx-large;
+  animation: button-outline 1.6s infinite;
+}
+
+.main__spotlight--button:hover {
+  font-family: Gypsy Curse;
+  padding-top: 0px;
+  font-family: Gypsy Curse;
+  font-size: 37px;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 20px;
+  color: silver;
+  animation-name: color-background;
+  animation-duration: 8s;
+  transition: text-shadow 3s;
+
+  text-shadow:
+    13px 30px 1px black,
+    14px 34px 1px #FC0000,
+    15px 36px 1px #FD0000,
+    16px 38px 1px #FE0000,
+    16px 40px 2px #FF0000,
+    16px 42px 2px #FF0000,
+    16px 44px 2px #FF0000,
+    17px 46px 3px #FF0000;
+}
+
+.main__spotlight--button2 {
+  position: relative;
+  height:50px;
+  width: 350px;
+  margin-top: 20px;
+  margin-left: 37px;
+  outline: 1px solid black;
+  border: none;
+  background-color: transparent;
+  font-weight: 900;
+  font-size: xx-large;
+  animation: button-outline 1.6s infinite;
+  animation-delay: .4s;
+}
+
+.main__spotlight--button3 {
+  position: relative;
+  height:50px;
+  width: 350px;
+  margin-top: 20px;
+  margin-left: 37px;
+  outline: 1px solid black;
+  border: none;
+  background-color: transparent;
+  font-weight: 900;
+  font-size: xx-large;
+  animation: button-outline 1.6s infinite;
+  animation-delay: .8s;
+}
+
+.main__spotlight--button4 {
+  position: relative;
+  height:50px;
+  width: 350px;
+  margin-top: 20px;
+  margin-left: 37px;
+  outline: 1px solid black;
+  border: none;
+  background-color: transparent;
+  font-weight: 900;
+  font-size: xx-large;
+  animation: button-outline 1.6s infinite;
+  animation-delay: 1.2s;
 }
 
 .main__h1--spotlight {
@@ -145,6 +195,42 @@
   }
   100% {
     -webkit-transform: rotate(-30deg);
+  }
+}
+
+@keyframes button-outline {
+  0%  {
+    outline-offset: 0px;
+  }
+  10% {
+    outline-offset: -2px;
+  }
+  20% {
+    outline-offset: -4px;
+  }
+  30% {
+    outline-offset: -6px;
+  }
+  40% {
+    outline-offset: -8px;
+  }
+  50% {
+    outline-offset: -10px;
+  }
+  60% {
+    outline-offset: -8px;
+  }
+  70% {
+    outline-offset: -6px;
+  }
+  80% {
+    outline-offset: -4px;
+  }
+  90% {
+    outline-offset: -2px;
+  }
+  100% {
+    outline-offset: 0px;
   }
 }
 
