@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Gypsy Curse";
-  src: url('Gypsy-Curse.ttf')
+  src: url('gypsy-curse.regular.ttf')
 }
 
 .main__container--navbar {
@@ -45,7 +45,26 @@
 }
 
 .main__spotlight--button:hover {
-  background-color: white;
+  font-family: Gypsy Curse;
+  padding-top: 0px;
+  font-family: Gypsy Curse;
+  font-size: 37px;
+  border: 1px solid black;
+  border-radius: 20px;
+  color: silver;
+  animation-name: color-background;
+  animation-duration: 8s;
+  transition: text-shadow 3s;
+
+  text-shadow:
+    13px 30px 1px black,
+    14px 34px 1px #FC0000,
+    15px 36px 1px #FD0000,
+    16px 38px 1px #FE0000,
+    16px 40px 2px #FF0000,
+    16px 42px 2px #FF0000,
+    16px 44px 2px #FF0000,
+    17px 46px 3px #FF0000;
 }
 
 .spotlight {
@@ -128,3 +147,10 @@
     -webkit-transform: rotate(-30deg);
   }
 }
+
+@keyframes color-background {
+    0%   {background-color: white;}
+    10%  {background-color: rgb(153, 106, 114);}
+    20%  {background-color: red;}
+    100% {background-color: red;}
+    }
