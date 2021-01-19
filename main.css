@@ -8,6 +8,8 @@
   src: url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@900");
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+
 .main__container--navbar {
     display: flex;
     justify-content: space-between;
@@ -162,7 +164,11 @@
 }
 
 .main__spotlight--button3 {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
   position: relative;
+  justify-self: center;
   height:50px;
   width: 350px;
   margin-top: 20px;
@@ -174,6 +180,32 @@
   font-size: xx-large;
   animation: button-outline 1.6s infinite;
   animation-delay: .4s;
+}
+
+.main__spotlight--button3:hover {
+  transform: scale(1.5);
+  align-content: center;
+  animation: lava 4s infinite;
+  color: rgba(255,255,255,0.9);
+  font-family: Open Sans, "sans-serif";
+  font-size: x-large;
+  border:none;
+  outline: none;
+}
+
+.main__lava-icon {
+  justify-content: center;
+}
+
+.main__text--lava:hover {
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(255,0,0,1) 84%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  animation: lava 2s;
 }
 
 .main__spotlight--button4 {
@@ -228,6 +260,10 @@
   -webkit-transform-origin: 50% 100% 0;
   z-index: 0;
   -webkit-transition-timing: ease-in-out;
+}
+
+a {
+  text-decoration: none;;
 }
 
  @-webkit-keyframes move {
@@ -397,5 +433,37 @@
     color: black;
     background: rgb(255,255,255);
     background: radial-gradient(ellipse at 100% 100%, rgba(255,255,255,1) 0%, rgba(243,245,1,0.5) 50%);
+  }
+}
+
+@keyframes lava {
+  0% {
+    text-shadow: 1px 1px 0px red;
+  }
+  10% {
+  }
+  20% {
+  }
+  30% {
+  }
+  40% {
+  }
+  50% {
+    text-shadow: 0px 0px 40px  red;
+  }
+  60% {
+  }
+  70% {
+
+  }
+  88% {
+  }
+  90% {
+  }
+  92% {
+
+  }
+  100% {
+    text-shadow: 1px 1px 0px red;
   }
 }
