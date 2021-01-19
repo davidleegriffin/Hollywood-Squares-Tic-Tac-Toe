@@ -92,6 +92,8 @@
   top: 20%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   z-index: 999;
   color: rgba(255,255,255,0.15);
   margin-top: -50px;
@@ -101,8 +103,8 @@
   position: relative;
   height:50px;
   width: 350px;
-  justify-self: center;
-  margin-left: 50px;
+  /* justify-self: center; */
+  margin-left: 40px;
   margin-top: 10px;
   outline: 1px solid rgba(0,0,0,0.2);
   outline-offset: 0px;
@@ -110,7 +112,8 @@
   background-color: transparent;
   font-weight: 900;
   font-size: xx-large;
-  animation: button-outline 1.6s infinite;
+  animation: button-outline 2s infinite;
+  /* animation-delay: 1.5s; */
 }
 
 .main__spotlight--button1:hover {
@@ -149,8 +152,8 @@
   font-family: Work Sans;
   font-weight: 900;
   font-size: 30px;
-  animation: button-outline 1.6s infinite;
-  animation-delay: .2s;
+  animation: button-outline 2s infinite;
+  /* animation-delay: 1s; */
 }
 
 .main__spotlight--button2:hover {
@@ -166,10 +169,10 @@
 .main__spotlight--button3 {
   display: flex;
   flex-direction: column;
-  align-content: center;
+  align-items: center;
   position: relative;
-  justify-self: center;
-  height:50px;
+  justify-content: center;
+  height:100px;
   width: 350px;
   margin-top: 20px;
   margin-left: 37px;
@@ -178,23 +181,21 @@
   background-color: transparent;
   font-weight: 900;
   font-size: xx-large;
-  animation: button-outline 1.6s infinite;
-  animation-delay: .4s;
+  animation: button-outline 2s infinite;
+  /* animation-delay: 0.5s; */
 }
 
 .main__spotlight--button3:hover {
+  background: rgba(255,255,255,0.2);
   transform: scale(1.5);
   align-content: center;
-  animation: lava 4s infinite;
+  border-radius: 5px;
   color: rgba(255,255,255,0.9);
   font-family: Open Sans, "sans-serif";
   font-size: x-large;
   border:none;
   outline: none;
-}
-
-.main__lava-icon {
-  justify-content: center;
+  animation: lava 4s infinite;
 }
 
 .main__text--lava:hover {
@@ -205,7 +206,7 @@
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-  animation: lava 2s;
+  animation: lava 3s;
 }
 
 .main__spotlight--button4 {
@@ -219,8 +220,8 @@
   background-color: transparent;
   font-weight: 900;
   font-size: xx-large;
-  animation: button-outline 1.6s infinite;
-  animation-delay: .6s;
+  animation: button-outline 2s infinite;
+  /* animation-delay: 1.5s; */
 }
 
 .main__spotlight--button4:hover {
@@ -295,31 +296,34 @@ a {
     outline-offset: 0px;
   }
   10% {
-    outline-offset: -2px;
+    outline-offset: -3px;
   }
   20% {
-    outline-offset: -4px;
+    outline-offset: -7px;
   }
-  30% {
-    outline-offset: -6px;
-  }
-  40% {
-    outline-offset: -8px;
-  }
-  50% {
+  25% {
     outline-offset: -10px;
   }
+  30% {
+    outline-offset: -7px;
+  }
+  40% {
+    outline-offset: -3px;
+  }
+  50% {
+    outline-offset: 0px;
+  }
   60% {
-    outline-offset: -8px;
+    outline-offset: 0px;
   }
   70% {
-    outline-offset: -6px;
+    outline-offset: 0px;
   }
   80% {
-    outline-offset: -4px;
+    outline-offset: 0px;
   }
   90% {
-    outline-offset: -2px;
+    outline-offset: 0px;
   }
   100% {
     outline-offset: 0px;
@@ -438,7 +442,7 @@ a {
 
 @keyframes lava {
   0% {
-    text-shadow: 1px 1px 0px red;
+    text-shadow: 0px 0px 1px rgba(255,255,255,0.7);
   }
   10% {
   }
@@ -449,7 +453,7 @@ a {
   40% {
   }
   50% {
-    text-shadow: 0px 0px 40px  red;
+
   }
   60% {
   }
@@ -461,9 +465,9 @@ a {
   90% {
   }
   92% {
-
   }
   100% {
-    text-shadow: 1px 1px 0px red;
+    text-shadow: 0px 0px 25px red;
+
   }
 }
