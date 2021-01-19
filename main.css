@@ -219,7 +219,7 @@
   border: none;
   background-color: transparent;
   font-weight: 900;
-  font-size: xx-large;
+  font-size: x-large;
   animation: button-outline 2s infinite;
   /* animation-delay: 1.5s; */
 }
