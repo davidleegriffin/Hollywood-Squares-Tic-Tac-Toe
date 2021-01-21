@@ -29,7 +29,8 @@ body {
   outline: none;
   border: none;
   border-radius: 0%;
-  margin-left: 10px;
+  margin-left: 30px;
+  margin-top: 20px;
 }
 
 .main__image--github {
