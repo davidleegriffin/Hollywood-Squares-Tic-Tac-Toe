@@ -29,7 +29,7 @@ body {
   outline: none;
   border: none;
   border-radius: 0%;
-  padding: 10px;
+  margin-left: 10px;
 }
 
 .main__image--github {
