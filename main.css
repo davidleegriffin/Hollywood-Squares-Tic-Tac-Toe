@@ -10,6 +10,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
 
+body {
+  background-image: url("https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=770&q=80");
+}
+
 .main__container--navbar {
     display: flex;
     justify-content: space-between;
@@ -31,20 +35,26 @@
 .main__image--github {
   border-radius: 50%;
   margin-left: 25px;
+  animation: spin 6s infinite;
+  /* animation-delay: 6s; */
 }
 
 .main__image--github:hover {
-  border-radius: 50%;
-  animation: spin 1.5s;
+ transform: scale(2.5);
+ margin-top: 20px;
+ /* left: 20px; */
 }
 
 .main__navbar--buttons {
     height:50px;
-    width: 100px;
+    width: 150px;
     outline: none;
     border: none;
+    border-radius: 25px;
     background-color: transparent;
-    box-shadow: 2px 2px 25px 3px rgba(100,100,100,0.3);
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 2px 2px 45px 20px rgba(255,255,255,0.5);
     border-radius: 5px;
     transition: width 1s, height 1s, transform 1s;
 }
@@ -52,20 +62,28 @@
 .main__image--linked-in {
   border-radius: 50%;
   margin-right: 25px;
+  animation: spin 6s infinite;
+  animation-delay: 3s;
 }
 
 .main__image--linked-in:hover {
-  border-radius: 50%;
-  animation: spin 1.5s;
+  transform: scale(2.5);
+  margin-top: 20px;
 }
 
 .main__navbar--buttons:hover {
   background-color: black;
   color: white;
-  box-shadow: 0px 0px 0px 0px white;
-  width: 100px;
-  height: 100px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
+  font-weight: 900;
+  border-radius: 25px;
+  box-shadow: 0px 0px 20px 0px white;
+  width: 150px;
+  height: 150px;
+  margin-top: 20px;
   transform: rotate(360deg);
+  animation-timing-function: ease-in-out;
 }
 
 .spotlight {
@@ -80,7 +98,9 @@
 }
 
 .main__container--page {
-    background-color: black;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 50%, rgba(255,255,255,0) 84%);
+    border-radius: 50%;
     color: white;
     width: 100%;
     height: 100vh;
@@ -172,7 +192,7 @@
   align-items: center;
   position: relative;
   justify-content: center;
-  height:100px;
+  height:70px;
   width: 350px;
   margin-top: 20px;
   margin-left: 37px;
@@ -230,7 +250,7 @@
   color: black;
   border: none;
   outline: none;
-  animation: bread 1.5s;
+  animation: bread 2s infinite;
 }
 
 .main__h1--spotlight {
@@ -358,8 +378,11 @@ a {
   0% {
     transform: rotateY(0deg);
   }
-  100% {
+  10% {
     transform: rotateY(720deg);
+  }
+  20% {
+    transform: rotateY(0deg);
   }
 }
 
@@ -399,7 +422,7 @@ a {
     background: radial-gradient(circle at 44% 15%, rgba(255,255,255,1) 3%, rgba(243,245,1,0.5) 50%);
   }
   50% {
-    transform: scale(1.5);
+    transform: scale(1.1);
     background: rgb(255,255,255);
     background: radial-gradient(circle at 50% 5%, rgba(255,255,255,1) 5%, rgba(243,245,1,0.5) 50%);
   }
@@ -432,17 +455,22 @@ a {
     background: rgb(255,255,255);
     background: radial-gradient(circle at 94% 87%, rgba(255,255,255,1) 0%, rgba(243,245,1,0.5) 50%);
   }
-  100% {
+  99% {
     transform: scale(1);
     color: black;
     background: rgb(255,255,255);
     background: radial-gradient(ellipse at 100% 100%, rgba(255,255,255,1) 0%, rgba(243,245,1,0.5) 50%);
+  }
+  100% {
+    /* color: white;
+    background-color: black; */
   }
 }
 
 @keyframes lava {
   0% {
     text-shadow: 0px 0px 1px rgba(255,255,255,0.7);
+    background: rgba(255,255,255,0.1);
   }
   10% {
   }
@@ -453,7 +481,8 @@ a {
   40% {
   }
   50% {
-
+    text-shadow: 0px 0px 25px red;
+    background: rgba(255,255,255,0.01);
   }
   60% {
   }
@@ -467,7 +496,7 @@ a {
   92% {
   }
   100% {
-    text-shadow: 0px 0px 25px red;
-
+    text-shadow: 0px 0px 1px rgba(255,255,255,0.7);
+    background: rgba(255,255,255,0.1);
   }
 }
