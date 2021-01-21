@@ -33,6 +33,10 @@ body {
   margin-top: 0px;
 }
 
+.main__navbar--button-github:hover {
+ opacity: 0; 
+}
+
 .main__image--github {
   border-radius: 50%;
   margin-left: -3px;
