@@ -286,15 +286,27 @@ body {
 
 .spot1 {
     position: absolute;
-    left: 38%;
+    left: 20%;
      -webkit-animation: move 7s infinite;
     }
 
 .spot2 {
     position: absolute;
-    left: 62%;
+    left: 40%;
      -webkit-animation: move2 7s infinite;
     }
+
+.spot3 {
+  position: absolute;
+  left: 60%;
+  -webkit-animation: move 7s infinite;
+  }
+
+.spot4 {
+  position: absolute;
+  left: 80%;
+    -webkit-animation: move2 7s infinite;
+  }
 
 .spotlight {
   position: absolute;
