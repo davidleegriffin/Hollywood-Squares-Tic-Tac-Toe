@@ -121,7 +121,7 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 999;
-  color: rgba(255,255,255,0.15);
+  color: rgba(10,10,10,0.5);
   /* margin-top: 20px; */
   /* animation: button-outline 2s infinite;
   animation-timing-function: ease-in-out; */
