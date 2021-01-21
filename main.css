@@ -28,9 +28,9 @@ body {
   width: 55px;
   outline: none;
   border: none;
-  border-radius: 0%;
-  margin-left: 35px;
-  margin-top: 10px;
+  border-radius: 15px;
+  margin-left: 37px;
+  margin-top: 5px;
 }
 
 .main__image--github {
