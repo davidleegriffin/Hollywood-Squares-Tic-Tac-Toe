@@ -24,13 +24,13 @@ body {
 
 .main__navbar--button-github {
   background-color: white;
-  height:55px;
-  width: 55px;
+  height:50px;
+  width: 50px;
   outline: none;
   border: none;
   border-radius: 15px;
   margin-left: 37px;
-  margin-top: 5px;
+  margin-top: 0px;
 }
 
 .main__image--github {
