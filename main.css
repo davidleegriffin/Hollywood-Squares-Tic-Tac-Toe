@@ -36,7 +36,7 @@ body {
 
 .main__navbar--button-github:hover {
    background-color: rgba(40, 123, 178, 0);
-   transform: scale(2);
+   transform: scale(1.75);
 }
 
 .main__image--github {
@@ -45,7 +45,7 @@ body {
 }
 
 .main__image--github:hover {
- transform: scale(2);
+ transform: scale(1.75);
  margin-top: 20px;
  /* left: 20px; */
 }
