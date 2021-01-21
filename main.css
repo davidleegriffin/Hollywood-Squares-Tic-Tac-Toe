@@ -59,7 +59,7 @@ body {
 }
 
 .main__image--linked-in {
-  border-radius: 50%;
+  border-radius: 0%;
   margin-right: 25px;
   animation: spin 6s infinite;
   animation-delay: 3s;
