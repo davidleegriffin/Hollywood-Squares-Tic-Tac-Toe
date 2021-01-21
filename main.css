@@ -23,17 +23,18 @@ body {
 }
 
 .main__navbar--button-github {
+  background-color: white;
   height:55px;
   width: 55px;
   outline: none;
   border: none;
-  border-radius: 50%;
+  border-radius: 0%;
   padding: 10px;
 }
 
 .main__image--github {
   border-radius: 50%;
-  margin-left: 25px;
+  margin-left: 0px;
   animation: spin 6s infinite;
   /* animation-delay: 6s; */
 }
