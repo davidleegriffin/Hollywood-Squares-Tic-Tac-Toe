@@ -110,13 +110,16 @@ body {
   position: absolute;
   left: 38%;
   top: 20%;
+  outline: 1px dotted rgba(255, 215, 0, 0.4);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   z-index: 999;
   color: rgba(255,255,255,0.15);
-  margin-top: -50px;
+  /* margin-top: 20px; */
+  animation: button-outline 2s infinite;
+  animation-timing-function: ease-in-out;
 }
 
 .main__spotlight--button1 {
@@ -126,14 +129,15 @@ body {
   /* justify-self: center; */
   margin-left: 40px;
   margin-top: 10px;
-  outline: 1px solid rgba(0,0,0,0.2);
+  /* outline: 1px dotted rgba(255, 215, 0, 0.25); */
   outline-offset: 0px;
   border: none;
   background-color: transparent;
+  color: transparent;
   font-weight: 900;
   font-size: xx-large;
-  animation: button-outline 2s infinite;
-  /* animation-delay: 1.5s; */
+  /* animation: button-outline 1.6s infinite;
+  animation-delay: 1.2s; */
 }
 
 .main__spotlight--button1:hover {
@@ -166,14 +170,15 @@ body {
   width: 350px;
   margin-top: 20px;
   margin-left: 37px;
-  outline: 1px solid rgba(0,0,0,0.2);
+  /* outline: 1px dotted rgba(255, 215, 0, 0.25); */
   border: none;
   background-color: transparent;
+  color: transparent;
   font-family: Work Sans;
   font-weight: 900;
   font-size: 30px;
-  animation: button-outline 2s infinite;
-  /* animation-delay: 1s; */
+  /* animation: button-outline 1.6s infinite;
+  animation-delay: 0.8s; */
 }
 
 .main__spotlight--button2:hover {
@@ -192,17 +197,25 @@ body {
   align-items: center;
   position: relative;
   justify-content: center;
-  height:70px;
+  height:50px;
   width: 350px;
   margin-top: 20px;
   margin-left: 37px;
-  outline: 1px solid rgba(0,0,0,0.2);
+  /* outline: 1px dotted rgba(255, 215, 0, 0.25); */
   border: none;
   background-color: transparent;
   font-weight: 900;
   font-size: xx-large;
-  animation: button-outline 2s infinite;
-  /* animation-delay: 0.5s; */
+  /* animation: button-outline 1.6s infinite;
+  animation-delay: 0.4s; */
+}
+
+.main__lava-icon--container {
+  opacity: 0;
+}
+
+.main__lava-icon--container:hover {
+  opacity: 1;
 }
 
 .main__spotlight--button3:hover {
@@ -215,7 +228,8 @@ body {
   font-size: x-large;
   border:none;
   outline: none;
-  animation: lava 4s infinite;
+  animation: lava 2s infinite;
+
 }
 
 .main__text--lava:hover {
@@ -235,12 +249,13 @@ body {
   width: 350px;
   margin-top: 20px;
   margin-left: 37px;
-  outline: 1px solid rgba(0,0,0,0.2);
+  /* outline: 1px dotted rgba(255, 215, 0, 0.25); */
   border: none;
   background-color: transparent;
+  color: transparent;
   font-weight: 900;
   font-size: x-large;
-  animation: button-outline 2s infinite;
+  /* animation: button-outline 1.6s infinite; */
   /* animation-delay: 1.5s; */
 }
 
@@ -313,40 +328,47 @@ a {
 
 @keyframes button-outline {
   0%  {
-    outline-offset: 0px;
+    outline-offset: 1000px;
+    outline: 40px solid rgba(255, 215, 0, 1);
   }
   10% {
-    outline-offset: -3px;
+    /* outline-offset: 20px; */
   }
   20% {
-    outline-offset: -7px;
+    /* outline-offset: 40px; */
   }
   25% {
-    outline-offset: -10px;
+    /* outline-offset: 60px; */
   }
   30% {
-    outline-offset: -7px;
+    /* outline-offset: 80px; */
   }
   40% {
-    outline-offset: -3px;
+    /* outline-offset: 100px; */
   }
   50% {
-    outline-offset: 0px;
+    outline-offset: -250px;
+    outline: 1px solid rgba(255, 215, 0, 0.5);
+  }
+  51% {
+    outline: 1px dotted rgba(255, 215, 0, 0);
+
   }
   60% {
-    outline-offset: 0px;
+    /* outline-offset: 50px; */
   }
   70% {
-    outline-offset: 0px;
+    /* outline-offset: 40px; */
   }
   80% {
-    outline-offset: 0px;
+    /* outline-offset: 30px; */
   }
   90% {
-    outline-offset: 0px;
+    /* outline-offset: 20px; */
   }
   100% {
     outline-offset: 0px;
+    outline: 0px dotted rgba(255, 215, 0, 0);
   }
 }
 
