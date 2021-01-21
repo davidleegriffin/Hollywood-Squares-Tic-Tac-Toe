@@ -23,12 +23,12 @@ body {
 }
 
 .main__navbar--button-github {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(40, 103, 178, 0.9);
   height:50px;
   width: 50px;
   outline: none;
   border: none;
-  border-radius: 15px;
+  border-radius: 5px;
   margin-left: 45px;
   margin-top: 0px;
 }
