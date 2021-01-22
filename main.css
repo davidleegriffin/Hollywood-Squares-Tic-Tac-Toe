@@ -212,8 +212,8 @@ body {
   color: transparent;
   font-weight: 900;
   font-size: xx-large;
-  /* animation: button-outline 1.6s infinite;
-  animation-delay: 1.2s; */
+  animation: ping 4s infinite;
+  animation-delay: 0.15s;
 }
 
 .main__spotlight--button1:hover {
@@ -253,8 +253,8 @@ body {
   font-family: Work Sans;
   font-weight: 900;
   font-size: 30px;
-  /* animation: button-outline 1.6s infinite;
-  animation-delay: 0.8s; */
+  animation: ping 4s infinite;
+  animation-delay: 0.05s;
 }
 
 .main__spotlight--button2:hover {
@@ -282,8 +282,8 @@ body {
   background-color: transparent;
   font-weight: 900;
   font-size: xx-large;
-  /* animation: button-outline 1.6s infinite;
-  animation-delay: 0.4s; */
+  animation: ping 4s infinite;
+  animation-delay: 0.05s;
 }
 
 .main__lava-icon--container {
@@ -331,8 +331,8 @@ body {
   color: transparent;
   font-weight: 900;
   font-size: x-large;
-  /* animation: button-outline 1.6s infinite; */
-  /* animation-delay: 1.5s; */
+  animation: ping 4s infinite;
+  animation-delay: 0.15s;
 }
 
 .main__spotlight--button4:hover {
@@ -515,22 +515,28 @@ a {
     transform: rotateY(0deg);
   }
   10% {
-    box-shadow: 2px 2px 45px 20px rgba(255,0,0,0.5);
+    box-shadow: 2px 2px 45px 20px rgba(0,255,0,0.5);
     transform: rotateY(720deg);
   }
   20% {
-    box-shadow: 2px 2px 45px 20px rgba(255,0,0,0.5);
+    box-shadow: 2px 2px 45px 20px rgba(0,0,255,0.5);
     transform: rotateY(0deg);
   }
+  25% {
+    opacity: 0.5
+  }
   33% {
-    box-shadow: 2px 2px 45px 20px rgba(0,255,0,0.5);
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.1;
   }
   66% {
-    box-shadow: 2px 2px 45px 20px rgba(0,0,255,0.5);
+    opacity: 0;
   }
   100% {
     box-shadow: 2px 2px 45px 20px rgba(255,0,0,0.5);
-
+    opacity: 0;
   }
 }
 
@@ -646,5 +652,27 @@ a {
   100% {
     text-shadow: 0px 0px 1px rgba(255,255,255,0.7);
     background: rgba(255,255,255,0.1);
+  }
+}
+
+@keyframes ping {
+  0% {
+    opacity: 0;
+    box-shadow: 0px 0px 45px 20px rgba(100,100,100,0);
+  }
+  12% {
+    opacity: 0.15;
+    box-shadow: 0px 0px 45px 20px rgba(100,100,100,0.1);
+  }
+  17% {
+    opacity: 0.35;
+    box-shadow: 0px 0px 45px 20px rgba(100,100,100,0.3);
+  }
+  25% {
+    opacity: 0.1;
+    box-shadow: 0px 0px 45px 20px rgba(100,100,100,0.1);
+  }
+  63% {
+    opacity: 0;
   }
 }
