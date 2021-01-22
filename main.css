@@ -20,6 +20,7 @@ body {
     width: 100%;
     height: 50px;
     margin: auto;
+    overflow: none;
 }
 
 .main__navbar--button-github {
@@ -173,6 +174,7 @@ body {
     color: white;
     width: 100%;
     height: 100vh;
+    overflow: none;
 }
 
 #text {
@@ -198,6 +200,15 @@ body {
   animation: dot 4s infinite;
 }
 
+.main__container--sub-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: ping 4s infinite;
+  animation-delay: 0.48s;
+}
+
 .main__spotlight--button1 {
   position: relative;
   height:50px;
@@ -212,8 +223,6 @@ body {
   color: transparent;
   font-weight: 900;
   font-size: xx-large;
-  animation: ping 4s infinite;
-  animation-delay: 0.15s;
 }
 
 .main__spotlight--button1:hover {
@@ -253,8 +262,8 @@ body {
   font-family: Work Sans;
   font-weight: 900;
   font-size: 30px;
-  animation: ping 4s infinite;
-  animation-delay: 0.05s;
+  /* animation: ping 4s infinite;
+  animation-delay: 0.05s; */
 }
 
 .main__spotlight--button2:hover {
@@ -282,8 +291,8 @@ body {
   background-color: transparent;
   font-weight: 900;
   font-size: xx-large;
-  animation: ping 4s infinite;
-  animation-delay: 0.05s;
+  /* animation: ping 4s infinite;
+  animation-delay: 0.05s; */
 }
 
 .main__lava-icon--container {
@@ -331,8 +340,6 @@ body {
   color: transparent;
   font-weight: 900;
   font-size: x-large;
-  animation: ping 4s infinite;
-  animation-delay: 0.15s;
 }
 
 .main__spotlight--button4:hover {
@@ -417,13 +424,13 @@ a {
 
 @keyframes dot {
   0% {
-    /* outline: 1px solid white; */
+    outline: 1px solid white;
     box-shadow: 0px 0px 0px rgba(255,255,255,0.2);
   }
   100% {
     box-shadow:
-              0px 0px 0px 799px transparent,
-              0px 0px 0px 800px rgba(100,100,100,0.01);
+              0px 0px 0px 999px transparent,
+              0px 0px 0px 1000px rgba(100,100,100,0.01);
   }
 }
 
@@ -657,22 +664,28 @@ a {
 
 @keyframes ping {
   0% {
-    opacity: 0;
-    box-shadow: 0px 0px 45px 20px rgba(100,100,100,0);
-  }
-  12% {
-    opacity: 0.15;
-    box-shadow: 0px 0px 45px 20px rgba(100,100,100,0.1);
+    /* opacity: 0; */
+    box-shadow: 0px 0px 42px 2px rgba(255, 215, 0, 0);
+    box-shadow: 0px 0px 45px 2px rgba(245, 243, 243, 0);
   }
   17% {
-    opacity: 0.35;
-    box-shadow: 0px 0px 45px 20px rgba(100,100,100,0.3);
+    /* opacity: 0.15; */
+    box-shadow: 0px 0px 4px 10px rgba(255, 215, 0, 0.3);
+    box-shadow: 0px 0px 45px 2px rgba(245,243,243,0.1);
   }
-  25% {
-    opacity: 0.1;
-    box-shadow: 0px 0px 45px 20px rgba(100,100,100,0.1);
+  19% {
+    /* opacity: 0.35; */
+    /* box-shadow: 0px 0px 45px 20px rgba(100,100,100,0.1); */
+  }
+  23% {
+    /* opacity: 0.1; */
   }
   63% {
-    opacity: 0;
+    box-shadow: 0px 0px 42px 2px rgba(255, 215, 0, 0);
+    box-shadow: 0px 0px 45px 2px rgba(245, 243, 243, 0);
+    /* opacity: 0; */
+  }
+  100% {
+    /* opacity: 0; */
   }
 }
