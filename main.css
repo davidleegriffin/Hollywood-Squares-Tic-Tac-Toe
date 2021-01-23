@@ -107,7 +107,7 @@ body {
   box-shadow: 2px 2px 45px 20px rgba(0,255,0,0.5);
 
 }
-
+/*
 .purple {
   color: purple;
   text-shadow: 0px 0px 5px purple, 0px 0px 10px white, 0px 0px 15px black;
@@ -142,7 +142,7 @@ body {
   color: red;
   text-shadow: 0px 0px 5px purple, 0px 0px 10px white, 0px 0px 15px black;
   font-size:xx-large;
-}
+} */
 
 .main__image--linked-in {
   border-radius: 0%;
@@ -205,8 +205,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  animation: ping 4s infinite;
-  animation-delay: 0.48s;
 }
 
 .main__spotlight--button1 {
@@ -220,9 +218,11 @@ body {
   outline-offset: 0px;
   border: none;
   background-color: transparent;
-  color: transparent;
+  color: rgba(10,10,10,0.2);
   font-weight: 900;
   font-size: xx-large;
+  animation: ping 4s infinite;
+  animation-delay: 0.48s;
 }
 
 .main__spotlight--button1:hover {
@@ -258,12 +258,12 @@ body {
   /* outline: 1px dotted rgba(255, 215, 0, 0.25); */
   border: none;
   background-color: transparent;
-  color: transparent;
+  color: rgba(10,10,10,0.2);
   font-family: Work Sans;
   font-weight: 900;
   font-size: 30px;
-  /* animation: ping 4s infinite;
-  animation-delay: 0.05s; */
+  animation: ping 4s infinite;
+  animation-delay: 0.28s;
 }
 
 .main__spotlight--button2:hover {
@@ -282,26 +282,27 @@ body {
   align-items: center;
   position: relative;
   justify-content: center;
-  height:50px;
+  height:70px;
   width: 350px;
   margin-top: 20px;
   margin-left: 37px;
   /* outline: 1px dotted rgba(255, 215, 0, 0.25); */
   border: none;
   background-color: transparent;
+  color: rgba(10,10,10,0.2);
   font-weight: 900;
   font-size: xx-large;
-  /* animation: ping 4s infinite;
-  animation-delay: 0.05s; */
+  animation: ping 4s infinite;
+  animation-delay: 0.28s;
 }
 
-.main__lava-icon--container {
+/* .main__lava-icon--container {
   opacity: 0;
 }
 
 .main__lava-icon--container:hover {
   opacity: 1;
-}
+} */
 
 .main__spotlight--button3:hover {
   background: rgba(255,255,255,0.2);
@@ -337,9 +338,11 @@ body {
   /* outline: 1px dotted rgba(255, 215, 0, 0.25); */
   border: none;
   background-color: transparent;
-  color: transparent;
+  color: rgba(10,10,10,0.2);
   font-weight: 900;
   font-size: x-large;
+  animation: ping 4s infinite;
+  animation-delay: 0.48s;
 }
 
 .main__spotlight--button4:hover {
@@ -664,28 +667,16 @@ a {
 
 @keyframes ping {
   0% {
-    /* opacity: 0; */
-    box-shadow: 0px 0px 42px 2px rgba(255, 215, 0, 0);
-    box-shadow: 0px 0px 45px 2px rgba(245, 243, 243, 0);
+    color: rgba(50,50,50,0.1);
   }
-  17% {
-    /* opacity: 0.15; */
-    box-shadow: 0px 0px 4px 10px rgba(255, 215, 0, 0.3);
-    box-shadow: 0px 0px 45px 2px rgba(245,243,243,0.1);
+  7% {
+    color: rgba(50,50,50,0.4);
   }
-  19% {
-    /* opacity: 0.35; */
-    /* box-shadow: 0px 0px 45px 20px rgba(100,100,100,0.1); */
-  }
-  23% {
-    /* opacity: 0.1; */
-  }
-  63% {
-    box-shadow: 0px 0px 42px 2px rgba(255, 215, 0, 0);
-    box-shadow: 0px 0px 45px 2px rgba(245, 243, 243, 0);
-    /* opacity: 0; */
+  50% {
+    color: rgba(10,10,10,0.45);
   }
   100% {
-    /* opacity: 0; */
+    color: rgba(10,10,10,0);
+
   }
 }
