@@ -188,16 +188,20 @@ body {
   position: absolute;
   top: 50px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 5fr 0.25fr 5fr 1fr;
+  grid-template-rows: 4fr 0.25fr 4fr 2fr;
   background-color: transparent;
   width: 100%;
   height: 1000px;
-  animation: scroll-up 15s;
+  animation: scroll-up 16s;
+  animation-timing-function: ease-in;
 }
 
 @keyframes scroll-up {
   0% {
+    top: 1200px;
+  }
+  50% {
     top: 1200px;
   }
   100% {
@@ -206,8 +210,8 @@ body {
 }
 
 .project__deadreads {
-  grid-column-start: 2;
-  grid-row-start: 2;
+  grid-column-start: 4;
+  grid-row-start: 3;
   display: flex;
   justify-content: center;
   align-items: top;
@@ -217,8 +221,8 @@ body {
   -webkit-backdrop-filter: blur( 13.0px );
   border-radius: 10px;
   border: 1px solid black;
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
   margin-left: 5%;
   margin-top: 5%;
   border-radius: 7px;
@@ -248,7 +252,7 @@ body {
   border-radius: 20px;
   color: silver;
   animation-name: color-background;
-  animation-duration: 5s;
+  animation-duration: 6s;
   animation-iteration-count: infinite;
   /* transition: text-shadow 3s; */
 }
@@ -257,8 +261,26 @@ body {
   0%   {background-color: white;}
   10%  {background-color: rgb(153, 106, 114);}
   20%  {background-color: red;}
+  80% {
+    border: none;
+    background-color: transparent;
+    color: rgba(0,0,0,0.3);
+    -webkit-text-fill-color: transparent; 
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.0);
+    text-shadow:
+      34px -44px 1px black,
+      38px -48px 1px #FC0000,
+      42px -52px 1px #FD0000,
+      47px -54px 1px rgba(254, 0, 0, 0.8),
+      54px -58px 2px rgba(254, 0, 0, 0.6),
+      58px -62px 2px rgba(254, 0, 0, 0.4),
+      62px -66px 2px rgba(254, 0, 0, 0.2),
+      68px -70px 3px rgba(254, 0, 0, 0.1);
+  }
   100% {
-    background-color: red;
+    border: none;
+    background-color: transparent;
     color: rgba(0,0,0,0.3);
     -webkit-text-fill-color: transparent; 
     -webkit-text-stroke-width: 1px;
@@ -276,8 +298,8 @@ body {
 }
 
 .projects__emerald {
-  grid-column-start: 1;
-  grid-row-start: 2;
+  grid-column-start: 2;
+  grid-row-start: 3;
   display: flex;
   justify-content: center;
   align-items: top;
@@ -287,8 +309,8 @@ body {
   -webkit-backdrop-filter: blur( 13.0px );
   border-radius: 10px;
   border: 1px solid black;
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
   margin-left: 5%;
   margin-top: 5%;
   border-radius: 7px;
@@ -298,7 +320,7 @@ body {
   height:70px;
   width: 400px;
   margin-top: 20px;
-  margin-left: 37px;
+  margin-left: 0px;
   border: 2px solid black;
   border-radius: 15px;
   background-color: white;
@@ -324,7 +346,7 @@ body {
     text-shadow: 1px 1px rgba(0,255,0,0.5);
    }
   50% {
-    transform: scale(1.5);
+    transform: scale(1.25);
     text-shadow: 6px 6px 4px rgba(0,255,0,0.9);
 
    }
@@ -336,7 +358,7 @@ body {
 }
 
 .projects__lava {
-  grid-column-start: 2;
+  grid-column-start: 4;
   grid-row-start: 1;
   display: flex;
   justify-content: center;
@@ -347,8 +369,8 @@ body {
   -webkit-backdrop-filter: blur( 13.0px );
   border-radius: 10px;
   border: 1px solid black;
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
   margin-left: 5%;
   margin-top: 5%;
   border-radius: 7px;
@@ -362,7 +384,7 @@ body {
   height:70px;
   width: 350px;
   margin-top: 20px;
-  margin-left: 37px;
+  margin-left: 0px;
   border: none;
   color: rgba(255,255,255,0.9);
   font-weight: 900;
@@ -386,8 +408,8 @@ body {
   font-size: x-large;
   border:none;
   outline: none;
-  transform: scale(1.5);
-  animation: lava 3s infinite;
+  transform: scale(1.45);
+  animation: lava 2s infinite;
 }
 
 .main__text--lava:hover {
@@ -417,7 +439,7 @@ body {
 }
 
 .projects__bread{
-  grid-column-start: 1;
+  grid-column-start: 2;
   grid-row-start: 1;
   display: flex;
   justify-content: center;
@@ -428,8 +450,8 @@ body {
   -webkit-backdrop-filter: blur( 13.0px );
   border-radius: 10px;
   border: 1px solid black;
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
   margin-left: 5%;
   margin-top: 5%;
   border-radius: 7px;
@@ -440,7 +462,7 @@ body {
   height:50px;
   width: 350px;
   margin-top: 20px;
-  margin-left: 37px;
+  margin-left: 0px;
   border: none;
   border-radius: 15px;
   background-color: transparent;
