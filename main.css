@@ -186,18 +186,28 @@ body {
 
 .main__container--projects {
   position: absolute;
-  top: 800px;
+  top: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   background-color: transparent;
   width: 100%;
   height: 1000px;
+  animation: scroll-up 15s;
+}
+
+@keyframes scroll-up {
+  0% {
+    top: 1200px;
+  }
+  100% {
+    top: 50px;
+  }
 }
 
 .project__deadreads {
   grid-column-start: 2;
-  grid-row-start: 4;
+  grid-row-start: 2;
   display: flex;
   justify-content: center;
   align-items: top;
@@ -215,43 +225,59 @@ body {
 }
 
 .main__spotlight--button1 {
-  height:50px;
+  height:60px;
   width: 350px;
-  outline-offset: 0px;
-  border: none;
-  background-color: transparent;
-  color: rgba(10,10,10,0.2);
+  margin-top: 20px;
+  /* border: 2px solid black; */  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: black;
+  -webkit-text-fill-color: transparent; 
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  text-shadow: 2px 2px 4px white, 4px 4px 8px rgb(233, 12, 12);
   font-weight: 900;
   font-size: xx-large;
 }
 
 .main__spotlight--button1:hover {
-  font-family: Gypsy Curse;
   padding-top: 0px;
   font-family: Gypsy Curse;
-  font-size: 37px;
+  font-size: 47px;
   outline: none;
   border: 1px solid black;
   border-radius: 20px;
   color: silver;
   animation-name: color-background;
-  animation-duration: 8s;
-  transition: text-shadow 3s;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  /* transition: text-shadow 3s; */
+}
 
-  text-shadow:
-    13px 30px 1px black,
-    14px 34px 1px #FC0000,
-    15px 36px 1px #FD0000,
-    16px 38px 1px #FE0000,
-    16px 40px 2px #FF0000,
-    16px 42px 2px #FF0000,
-    16px 44px 2px #FF0000,
-    17px 46px 3px #FF0000;
+@keyframes color-background {
+  0%   {background-color: white;}
+  10%  {background-color: rgb(153, 106, 114);}
+  20%  {background-color: red;}
+  100% {
+    background-color: red;
+    color: rgba(0,0,0,0.3);
+    -webkit-text-fill-color: transparent; 
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.0);
+    text-shadow:
+      34px -44px 1px black,
+      38px -48px 1px #FC0000,
+      42px -52px 1px #FD0000,
+      47px -54px 1px rgba(254, 0, 0, 0.8),
+      54px -58px 2px rgba(254, 0, 0, 0.6),
+      58px -62px 2px rgba(254, 0, 0, 0.4),
+      62px -66px 2px rgba(254, 0, 0, 0.2),
+      68px -70px 3px rgba(254, 0, 0, 0.1);
+  }
 }
 
 .projects__emerald {
   grid-column-start: 1;
-  grid-row-start: 4;
+  grid-row-start: 2;
   display: flex;
   justify-content: center;
   align-items: top;
@@ -269,28 +295,49 @@ body {
 }
 
 .main__spotlight--button2 {
-  /* position: relative; */
-  height:50px;
-  width: 350px;
+  height:70px;
+  width: 400px;
   margin-top: 20px;
   margin-left: 37px;
-  border: none;
-  background-color: transparent;
-  color: rgba(10,10,10,0.2);
+  border: 2px solid black;
+  border-radius: 15px;
+  background-color: white;
+  color: black;
+  -webkit-text-fill-color: rgba(0,255.0,1);; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
+  text-shadow: 2px 2px 4px white, 4px 4px 4px black;
   font-family: Work Sans;
   font-weight: 900;
-  font-size: 30px;
-  animation: growText 2s infinite;
+  font-size: 40px;
 }
 
 .main__spotlight--button2:hover {
   color: rgba(0,255.0,1);
   outline: none;
+  animation: growText 1s;
+}
+
+@keyframes growText {
+  0% {
+    transform: scale(1);
+    text-shadow: 1px 1px rgba(0,255,0,0.5);
+   }
+  50% {
+    transform: scale(1.5);
+    text-shadow: 6px 6px 4px rgba(0,255,0,0.9);
+
+   }
+  100% {
+    transform: scale(1);
+    text-shadow: 1px 1px rgba(0,255,0,0.5);
+
+   }
 }
 
 .projects__lava {
   grid-column-start: 2;
-  grid-row-start: 3;
+  grid-row-start: 1;
   display: flex;
   justify-content: center;
   align-items: top;
@@ -314,7 +361,6 @@ body {
   justify-content: center;
   height:70px;
   width: 350px;
-  transform: scale(1.5);
   margin-top: 20px;
   margin-left: 37px;
   border: none;
@@ -328,7 +374,6 @@ body {
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-  animation: lava 3s infinite;
 }
 
 .main__spotlight--button3:hover {
@@ -341,6 +386,8 @@ body {
   font-size: x-large;
   border:none;
   outline: none;
+  transform: scale(1.5);
+  animation: lava 3s infinite;
 }
 
 .main__text--lava:hover {
@@ -371,7 +418,7 @@ body {
 
 .projects__bread{
   grid-column-start: 1;
-  grid-row-start: 3;
+  grid-row-start: 1;
   display: flex;
   justify-content: center;
   align-items: top;
@@ -400,120 +447,108 @@ body {
   color: rgba(10,10,10,0.2);
   font-weight: 900;
   font-size: x-large;
-  animation: bread 2s infinite;
+  color: black;
+  background-color: rgb(236, 236, 29);
 }
 
 .main__spotlight--button4:hover {
-  background-color: rgba(243,245,1,0.5);
+  background-color: rgba(243,245,1,1);
   border-radius: 20px;
   color: black;
   border: none;
   outline: none;
+  animation: bread 4s;
 }
 
 a {
   text-decoration: none;;
 }
 
-@keyframes color-background {
-    0%   {background-color: white;}
-    10%  {background-color: rgb(153, 106, 114);}
-    20%  {background-color: red;}
-    100% {background-color: red;}
-}
 
-@keyframes growText {
-  0% {
-    transform: scale(1);
-    text-shadow: 1px 1px rgba(0,255,0,0.5);
-   }
-  50% {
-    transform: scale(2);
-    text-shadow: 6px 6px 4px rgba(0,255,0,0.9);
-
-   }
-  100% {
-    transform: scale(1);
-    text-shadow: 1px 1px rgba(0,255,0,0.5);
-
-   }
-}
 
 @keyframes bread {
   0% {
     transform: scale(1);
     color: black;
-    background: rgb(255,255,255);
+    background-color: rgba(243,245,1,0.7);
     background: radial-gradient(ellipse at 0% 100%, rgba(255,255,255,1) 0%, rgba(243,245,1,0.5) 50%);
   }
-  6% {
+  3% {
     background: rgb(255,255,255);
     background: radial-gradient(circle at 6% 87%, rgba(255,255,255,1) 0%, rgba(243,245,1,0.5) 50%);
   }
-  12% {
+  6% {
     background: rgb(255,255,255);
     background: radial-gradient(circle at 12% 75%, rgba(255,255,255,1) 0%, rgba(243,245,1,0.5) 50%);
   }
-  18% {
+  9% {
     background: rgb(255,255,255);
     background: radial-gradient(circle at 18% 62%, rgba(255,255,255,1) 0%, rgba(243,245,1,0.5) 50%);
   }
-  25% {
+  13% {
     background: rgb(255,255,255);
     background: radial-gradient(circle at 25% 50%, rgba(255,255,255,1) 0%, rgba(243,245,1,0.5) 50%);
   }
-  32% {
+  16% {
     background: rgb(255,255,255);
     background: radial-gradient(circle at 32% 38%, rgba(255,255,255,1) 0%, rgba(243,245,1,0.5) 50%);
   }
-  38% {
+  19% {
     background: rgb(255,255,255);
     background: radial-gradient(circle at 38% 25%, rgba(255,255,255,1) 1%, rgba(243,245,1,0.5) 50%);
   }
-  44% {
+  22% {
     background: rgb(255,255,255);
     background: radial-gradient(circle at 44% 15%, rgba(255,255,255,1) 3%, rgba(243,245,1,0.5) 50%);
   }
-  50% {
-    transform: scale(1.1);
+  25% {
+    transform: scale(1.5);
     background: rgb(255,255,255);
     background: radial-gradient(circle at 50% 5%, rgba(255,255,255,1) 5%, rgba(243,245,1,0.5) 50%);
   }
-  56% {
+  28% {
     color: silver;
     background: rgb(255,255,255);
     background: radial-gradient(circle at 56% 15%, rgba(255,255,255,1) 3%, rgba(243,245,1,0.5) 50%);
   }
-  62% {
+  31% {
     background: rgb(255,255,255);
     background: radial-gradient(circle at 62% 25%, rgba(255,255,255,1) 1%, rgba(243,245,1,0.5) 50%);
   }
-  68% {
+  34% {
     background: rgb(255,255,255);
     background: radial-gradient(circle at 68% 38%, rgba(255,255,255,1) 0%, rgba(243,245,1,0.5) 50%);
   }
-  75% {
+  37% {
     background: rgb(255,255,255);
     background: radial-gradient(circle at 75% 50%, rgba(255,255,255,1) 0%, rgba(243,245,1,0.5) 50%);
   }
-  82% {
+  41% {
     background: rgb(255,255,255);
     background: radial-gradient(circle at 82% 62%, rgba(255,255,255,1) 0%, rgba(243,245,1,0.5) 50%);
   }
-  88% {
+  44% {
     background: rgb(255,255,255);
     background: radial-gradient(circle at 88% 75%, rgba(255,255,255,1) 0%, rgba(243,245,1,0.5) 50%);
   }
-  94% {
+  47% {
     background: rgb(255,255,255);
     background: radial-gradient(circle at 94% 87%, rgba(255,255,255,1) 0%, rgba(243,245,1,0.5) 50%);
   }
-  99% {
+  49% {
     transform: scale(1);
     color: black;
     background: rgb(255,255,255);
     background: radial-gradient(ellipse at 100% 100%, rgba(255,255,255,1) 0%, rgba(243,245,1,0.5) 50%);
   }
+  55% {
+    transform: scale(1);
+    color: black;
+    background-color: rgba(243,245,1,1);
+  }
   100% {
+    transform: scale(1);
+    color: black;
+    background-color: rgba(243,245,1,1);
   }
 }
