@@ -210,6 +210,30 @@ body {
   }
 }
 
+.main__projects--about {
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  border: 10px solid transparent;
+  border-radius: 25px;
+  box-shadow: 0px 0px 1px 21px rgba(255, 255, 255, 0.15);
+  /* backdrop-filter: blur( 10.0px );
+  -webkit-backdrop-filter: blur( 10.0px ); */
+  color: black;
+  /* text-shadow: 0px 0px 1px black, 0px 0px 4px rgba(223, 245, 24, 0.3); */
+  font-family: sans-serif;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
 .project__deadreads {
   grid-column-start: 2;
   grid-row-start: 8;
