@@ -186,15 +186,16 @@ body {
 
 .main__container--projects {
   position: absolute;
-  top: 50px;
+  top: 0px;
   display: grid;
-  grid-template-columns: 1fr 5fr 0.25fr 5fr 1fr;
-  grid-template-rows: 4fr 0.25fr 4fr 2fr;
+  grid-template-columns: 1fr 50% 1fr;
+  grid-template-rows: 150px 400px 75px 400px 75px 400px 75px 400px 250px;
+  justify-content:center;
   background-color: transparent;
   width: 100%;
   height: 1000px;
-  animation: scroll-up 16s;
-  animation-timing-function: ease-in;
+  animation: scroll-up 6s;
+  animation-timing-function: ease-in-out;
 }
 
 @keyframes scroll-up {
@@ -205,27 +206,28 @@ body {
     top: 1200px;
   }
   100% {
-    top: 50px;
+    top: 0px;
   }
 }
 
 .project__deadreads {
-  grid-column-start: 4;
-  grid-row-start: 3;
+  grid-column-start: 2;
+  grid-row-start: 8;
   display: flex;
-  justify-content: center;
-  align-items: top;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
   background: rgba( 255, 255, 255, 0.20 );
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 13.0px );
   -webkit-backdrop-filter: blur( 13.0px );
-  border-radius: 10px;
+  border-radius: 25px;
   border: 1px solid black;
   width: 100%;
   height: 100%;
   margin-left: 5%;
   margin-top: 5%;
-  border-radius: 7px;
+  /* border-radius: 7px; */
 }
 
 .main__spotlight--button1 {
@@ -235,7 +237,7 @@ body {
   /* border: 2px solid black; */  border-radius: 25px;
   background-color: rgba(255, 255, 255, 0.1);
   color: black;
-  -webkit-text-fill-color: transparent; 
+  -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   text-shadow: 2px 2px 4px white, 4px 4px 8px rgb(233, 12, 12);
@@ -265,7 +267,7 @@ body {
     border: none;
     background-color: transparent;
     color: rgba(0,0,0,0.3);
-    -webkit-text-fill-color: transparent; 
+    -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgba(0, 0, 0, 0.0);
     text-shadow:
@@ -282,7 +284,7 @@ body {
     border: none;
     background-color: transparent;
     color: rgba(0,0,0,0.3);
-    -webkit-text-fill-color: transparent; 
+    -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgba(0, 0, 0, 0.0);
     text-shadow:
@@ -299,21 +301,22 @@ body {
 
 .projects__emerald {
   grid-column-start: 2;
-  grid-row-start: 3;
+  grid-row-start: 6;
   display: flex;
-  justify-content: center;
-  align-items: top;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
   background: rgba( 255, 255, 255, 0.20 );
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 13.0px );
   -webkit-backdrop-filter: blur( 13.0px );
-  border-radius: 10px;
+  border-radius: 25px;
   border: 1px solid black;
   width: 100%;
   height: 100%;
   margin-left: 5%;
   margin-top: 5%;
-  border-radius: 7px;
+  /* border-radius: 7px; */
 }
 
 .main__spotlight--button2 {
@@ -358,22 +361,23 @@ body {
 }
 
 .projects__lava {
-  grid-column-start: 4;
-  grid-row-start: 1;
+  grid-column-start: 2;
+  grid-row-start: 4;
   display: flex;
-  justify-content: center;
-  align-items: top;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
   background: rgba( 255, 255, 255, 0.20 );
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 13.0px );
   -webkit-backdrop-filter: blur( 13.0px );
-  border-radius: 10px;
+  border-radius: 25px;
   border: 1px solid black;
   width: 100%;
   height: 100%;
   margin-left: 5%;
   margin-top: 5%;
-  border-radius: 7px;
+  /* border-radius: 7px; */
 }
 
 .main__spotlight--button3 {
@@ -440,21 +444,21 @@ body {
 
 .projects__bread{
   grid-column-start: 2;
-  grid-row-start: 1;
+  grid-row-start: 2;
   display: flex;
-  justify-content: center;
-  align-items: top;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
   background: rgba( 255, 255, 255, 0.20 );
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 13.0px );
   -webkit-backdrop-filter: blur( 13.0px );
-  border-radius: 10px;
   border: 1px solid black;
   width: 100%;
   height: 100%;
   margin-left: 5%;
   margin-top: 5%;
-  border-radius: 7px;
+  border-radius: 25px;
 }
 
 .main__spotlight--button4 {
@@ -480,6 +484,15 @@ body {
   border: none;
   outline: none;
   animation: bread 4s;
+}
+
+.projects__bread--description {
+  position: relative;
+  width: 90%;
+  height: 80%;
+  margin: 20px;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 a {
