@@ -106,12 +106,12 @@ body {
 
 #text {
   position: absolute;
-  left: 38%;
-  top: 30%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  left: 35%;
+  top: 25%;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
   z-index: 999;
   color: rgba(10,10,10,0.5);
   text-shadow: 0px 0px 50px white;
@@ -123,25 +123,25 @@ body {
 
 .spot1 {
     position: absolute;
-    left: 20%;
+    left: 15%;
      -webkit-animation: move 12s infinite;
     }
 
 .spot2 {
     position: absolute;
-    left: 40%;
+    left: 35%;
      -webkit-animation: move2 12s infinite;
     }
 
 .spot3 {
   position: absolute;
-  left: 60%;
+  left: 58%;
   -webkit-animation: move 12s infinite;
   }
 
 .spot4 {
   position: absolute;
-  left: 80%;
+  left: 75%;
     -webkit-animation: move2 12s infinite;
   }
 
@@ -182,6 +182,44 @@ body {
   -webkit-transform-origin: 50% 100% 0;
   z-index: 0;
   -webkit-transition-timing: ease-in-out;
+}
+
+.main__container--sub-text {
+  position:absolute;
+  left: 47%;
+  top: 70%;
+}
+
+.main__container--sub-text button{
+  width: 150px;
+  height: 50px;
+  background-color: transparent;
+  backdrop-filter: blur( 13.0px );
+  -webkit-backdrop-filter: blur( 13.0px );
+  color: gold;
+  font-family: "Work Sans";
+  font-weight: 800;
+  font-size: 25px;
+  box-shadow: 0px 0px 15px 1px gold;
+  animation: fade-in 6s;
+}
+
+.main__container--sub-text button:hover {
+  background-color: white;
+  color: black;
+  box-shadow: none;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .main__container--projects {
