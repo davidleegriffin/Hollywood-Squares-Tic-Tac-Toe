@@ -1,0 +1,32 @@
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+
+.influencer__wrapper--main {
+  font-family: sans-serif;
+  background-color: black;
+  color: white;
+  width: 320px;
+  height: 538px;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+
+.influencer__form {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+
+.influencer__form input, button {
+  border-radius: 5px;
+  margin: 10px;
+}
+
